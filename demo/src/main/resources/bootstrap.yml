@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    vault:
+      authentication: TOKEN
+      token: s.QiunyUDHAcRSg1uxPNRjvZQf
+      scheme: http
+      uri: http://0.0.0.0:8200
+      kv:
+        enabled: true
+
+  application:
+    name: vault
