@@ -17,16 +17,16 @@ public class VaultDemo {
     }
 
     @Value("${root}")
-    private String who1;
+    private String root;
 
     @Value("${test}")
-    private String who2;
+    private String test;
 
     @Value("${devops}")
-    private String who3;
+    private String devops;
 
     @RequestMapping("")
     public String hello() {
-        return String.format("Hello %s, %s, %s", who1, who2, who3);
+        return String.format("root.value = %s | test.value = %s | devops.value = %s ", root, test, devops);
     }
 }
